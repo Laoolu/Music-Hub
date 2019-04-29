@@ -110,3 +110,4 @@ C:\Users\DAMI\source\repos\MusicHub\obj\Debug\MusicHub.Migrations.OverrideConven
 C:\Users\DAMI\source\repos\MusicHub\obj\Debug\MusicHub.Migrations.PopulateGenresTable.resources
 C:\Users\DAMI\source\repos\MusicHub\obj\Debug\MusicHub.Migrations.AddForeignKeyPropertiesToGIg.resources
 C:\Users\DAMI\source\repos\MusicHub\obj\Debug\MusicHub.Migrations.AddNameToApplicationUser.resources
+C:\Users\DAMI\source\repos\MusicHub\obj\Debug\MusicHub.Migrations.AddAttendance.resources
