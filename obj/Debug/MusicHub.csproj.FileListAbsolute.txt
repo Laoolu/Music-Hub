@@ -111,3 +111,10 @@ C:\Users\DAMI\source\repos\MusicHub\obj\Debug\MusicHub.Migrations.PopulateGenres
 C:\Users\DAMI\source\repos\MusicHub\obj\Debug\MusicHub.Migrations.AddForeignKeyPropertiesToGIg.resources
 C:\Users\DAMI\source\repos\MusicHub\obj\Debug\MusicHub.Migrations.AddNameToApplicationUser.resources
 C:\Users\DAMI\source\repos\MusicHub\obj\Debug\MusicHub.Migrations.AddAttendance.resources
+C:\Users\DAMI\source\repos\MusicHub\bin\System.Net.Http.Formatting.dll
+C:\Users\DAMI\source\repos\MusicHub\bin\System.Web.Http.dll
+C:\Users\DAMI\source\repos\MusicHub\bin\System.Web.Http.WebHost.dll
+C:\Users\DAMI\source\repos\MusicHub\bin\System.Net.Http.Formatting.xml
+C:\Users\DAMI\source\repos\MusicHub\bin\System.Web.Http.xml
+C:\Users\DAMI\source\repos\MusicHub\bin\System.Web.Http.WebHost.xml
+C:\Users\DAMI\source\repos\MusicHub\obj\Debug\MusicHub.Migrations.AddFollowing.resources
