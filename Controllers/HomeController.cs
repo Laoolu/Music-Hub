@@ -3,6 +3,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web.Mvc;
 using MusicHub.Models;
+using MusicHub.ViewModels;
 
 namespace MusicHub.Controllers
 {
@@ -21,7 +22,14 @@ namespace MusicHub.Controllers
                 .Include(g => g.Artist)
                 .Include(g => g.Genre)
                 .Where(g => g.DateTime > DateTime.Now);
-            return View(upcomingGigs);
+
+            var viewModel = new HomeViewModel
+            {
+                UpcomingGigs = upcomingGigs,
+                ShowActions = User.Identity.IsAuthenticated
+            };
+            
+            return View(viewModel);
         }
 
         public ActionResult About()
@@ -38,4 +46,5 @@ namespace MusicHub.Controllers
             return View();
         }
     }
+
 }
