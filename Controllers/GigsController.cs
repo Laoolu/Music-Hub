@@ -16,6 +16,25 @@ namespace MusicHub.Controllers
         }
 
         [Authorize]
+        public ActionResult Attending()
+        {
+            var userId = User.Identity.GetUserId();
+            var gigs = _context.Attendances
+                .Where(a => a.AttendeeId == userId)
+                .Select(a => a.Gig)
+                .ToList();
+
+            var viewModel = new GigsViewModel()
+            {
+                UpcomingGigs = gigs,
+                ShowActions = User.Identity.IsAuthenticated
+            };
+
+            return View(viewModel);
+        }
+
+
+        [Authorize]
         public ActionResult Create()
         {
             var viewModel = new GigFormViewModel { Genres = _context.Genres.ToList() };
