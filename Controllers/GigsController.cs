@@ -41,7 +41,10 @@ namespace MusicHub.Controllers
         [Authorize]
         public ActionResult Create()
         {
-            var viewModel = new GigFormViewModel { Genres = _context.Genres.ToList() };
+            var viewModel = new GigFormViewModel
+            {
+                Genres = _context.Genres.ToList()
+            };
 
             return View(viewModel);
 
