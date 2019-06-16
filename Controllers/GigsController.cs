@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Data.Entity;
 using System.Linq;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
@@ -14,6 +15,18 @@ namespace MusicHub.Controllers
         public GigsController()
         {
             _context = new ApplicationDbContext();
+        }
+
+        [Authorize]
+        public ActionResult Mine()
+        {
+            var userId = User.Identity.GetUserId();
+            var gigs = _context.Gigs
+                .Where(g => g.ArtistId == userId && g.DateTime > DateTime.Now)
+                .Include(g => g.Genre)               
+                .ToList();
+
+            return View(gigs);
         }
 
         [Authorize]
