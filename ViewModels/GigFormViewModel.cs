@@ -23,6 +23,8 @@ namespace MusicHub.ViewModels
 
         public IEnumerable<Genre> Genres { get; set; }
 
+        public String Heading { get; set; }
+
         public DateTime GetDateTime()
         {
             return DateTime.Parse(string.Format("{0} {1}", Date, Time));
